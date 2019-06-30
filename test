@@ -1,0 +1,31 @@
+read -p "Enter 1st No: " a
+read -p "Enter 2nd NO: " b
+read -p "Enter 3rd NO: " c
+
+if [[ $a -gt $b && $a -gt $c ]]
+then 
+echo "1st No is gretest"
+	if [ $b -gt $c ]
+	then
+	echo "3rd No is smaller"
+	else
+	echo "2nd No is smaller"
+	fi
+elif [[ $b -gt $a && $b -gt $c ]]
+then
+echo "2nd No is gretest"
+	if [ $a -gt $c ]
+	then
+	echo "3rd No is smaller"
+	else
+	echo "1st No is smaller"
+	fi
+else
+echo "3rd No is gretter"
+	if [ $a -gt $b ]
+	then
+	echo "2nd No is smaller"
+	else
+	echo "1st No is smaller"
+	fi
+fi

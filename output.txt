@@ -1,0 +1,2 @@
+root:x:0:0:root:/root:/bin/sh
+ec2-user:x:1000:1000:Cloud User:/home/ec2-user:/bin/sh
